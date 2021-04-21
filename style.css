@@ -1,0 +1,142 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: url('images/bg-desktop.svg'),hsl(257, 40%, 49%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: #fff;
+}
+.container,.navbar,.page-body,.left-portion,.right-portion,.social-link{
+    display: flex;
+}
+.container{
+    margin: 4% 5%;
+    flex-direction: column;
+}
+.navbar{
+    flex-direction: column;
+    flex: 100%;
+}
+.page-body{
+    flex-direction: row;
+}
+.left-portion,.right-portion{
+    flex-direction: column;
+    flex: 50%;
+}
+.right-portion{
+    padding-left: 6%;
+}
+.navbar>img{
+    width: 15%;
+}
+.body-img>img{
+    margin-top: 11%;
+    width: 100%;
+}
+.heading{
+    font-family: 'Poppins', sans-serif;
+    padding: 18% 0% 5%;
+    line-height: 1.5;
+    font-size: large;
+    font-weight: 600;
+}
+.body-text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: justify;
+    letter-spacing: normal;
+    padding-right: 4%;
+}
+.register-btn{
+    padding: 3% 0%;
+}
+button{
+    padding: 2% 8%;
+    border-radius: 25px;
+    font-size: 16px;
+    color: hsl(257, 40%, 49%);
+    border-color: transparent;
+    box-shadow: 3px 3px 10px hsl(257, 40%, 30%);
+}
+button:hover{
+background-color: hsl(300, 69%, 71%);
+color: #fff;
+cursor: pointer;
+}
+.social-link{
+    margin-right: 1%;
+    flex-direction: row-reverse;
+}
+.link1,.link2,.link3{
+    border: 2px solid #fff;
+    border-radius: 50px;
+}
+.link2{
+    margin: 0% 1%;
+}
+.link1>img,.link2>img,.link3>img{
+    vertical-align: middle;
+    transform: scale(0.5);
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: #fff; 
+}
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    body{
+        background-image: url('images/bg-mobile.svg');
+    }
+    .container{
+        margin: 10%;
+    }
+    .navbar>img{
+        width: 40%;
+    }
+    .body-img>img{
+        margin-top: 20%;
+    }
+    .page-body{
+        flex-direction: column;
+    }
+    .left-portion,.right-portion{
+        flex: 100%;
+    }
+    .right-portion{
+        padding : 0%;
+    }
+    .heading{
+        font-weight: 400;
+        font-size: small;
+        text-align: center;
+    }
+    .body-text{
+        text-align: center;
+        font-size: 15px;
+        padding: 0% 2%;
+    }
+    .register-btn{
+        padding: 8% 0%;
+        text-align: center;
+    }
+    button{
+        font-size: 13px;
+        padding: 3% 20%;
+    }
+    .social-link{
+        margin: 20% 0% 0%;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
